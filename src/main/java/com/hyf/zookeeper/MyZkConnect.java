@@ -31,7 +31,7 @@ public class MyZkConnect {
 //        queryStat(zk,"/");
 //        ZooKeeper reZk = reconnect(zk.getSessionId(), zk.getSessionPasswd());
 //        log.info("reZk 状态:{},zk-SessionId:{}",reZk.getState(),reZk.getSessionId());
-        String nodePath = "/parent";
+        String nodePath = "/parent1";
         String nodeData = "father && monther";
         create(zk,"/parent","father && monther");
         Stat stat = queryStat(zk, nodePath);
